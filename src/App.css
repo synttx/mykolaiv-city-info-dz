@@ -87,3 +87,49 @@
   font-size: 14px;
   line-height: 1.4;
 }
+
+.rating {
+  color: #ffd700;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #61dafb;
+  color: #61dafb;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.nav-button.active {
+  background: #61dafb;
+  color: #282c34;
+  box-shadow: 0 0 15px rgba(97, 218, 251, 0.5);
+}
+
+.App {
+  padding-top: 80px; /* Щоб контент не ховався під навігацією */
+}
